@@ -28,9 +28,6 @@ class StarwarsGraphQL(Resource):
             "query", type=str, required=True, help="Provide a valid graphql query."
         )
         parser.add_argument("variables", type=dict, help="Variables for graphql query.")
-        parser.add_argument(
-            "apiKey", type=str, help="Api Key secret used to call Star Wars DaaS."
-        )
         args = parser.parse_args(strict=True)
         graphql_query = args.pop('query')
         schema = Schema(query=StarwarsDomainQuery)

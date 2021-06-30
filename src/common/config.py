@@ -1,4 +1,3 @@
-""" Domain Level Config """
 from graphene import Int
 from common import secrets
 
@@ -17,7 +16,6 @@ REGION = "us-east-1"
 DOMAIN = "Star Wars"
 VERSION = "1.0"
 
-# Projection should include all requests fields, foreign key fields in source & target tables + any RDM fields
 CHARACTER_PROJECTION = {
     "_id": 0,
     "name": 1,
@@ -25,7 +23,6 @@ CHARACTER_PROJECTION = {
     "height": 1,
 }
 
-# GENERIC GraphQL CONFIG. DO NOT CHANGE PLEASE
 DATA_LOADER = {}
 INFO = "info"
 KEY_NAME = "key_name"
