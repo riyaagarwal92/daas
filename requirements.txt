@@ -1,0 +1,13 @@
+requests
+flask==1.1.2
+flask-pymongo  
+flask-restful
+python-dotenv  
+pytest  
+boto3 
+logger  
+pyyaml
+graphene
+flask-graphql
+gunicorn
+flask_log_request_id
